@@ -1,0 +1,11 @@
+# Credentials and generated outputs
+.env
+*.key
+*.pem
+.vnc/
+logs/
+__pycache__/
+*.pyc
+build/
+install/
+log/

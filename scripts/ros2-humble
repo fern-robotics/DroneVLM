@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Run ROS 2 Humble with its Ubuntu 22.04 Python 3.10 interpreter.
+set -e
+source /opt/ros/humble/setup.bash
+source /workspace/Cosys-AirSim-src/ros2/install/setup.bash
+exec /usr/bin/python3.10 /opt/ros/humble/bin/ros2 "$@"
