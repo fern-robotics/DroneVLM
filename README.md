@@ -15,6 +15,16 @@ Reproducible Fern deployment, noVNC workspace, and ROS 2 Humble mission setup fo
 
 No API key, SSH key, Pod address, or VNC password is stored here.
 
+## Attribution and licensing
+
+DroneVLM is built on [Cosys-AirSim](https://github.com/Cosys-Lab/Cosys-AirSim), an MIT-licensed extension of Microsoft AirSim maintained by Cosys Lab, University of Antwerp. This repository contributes the DroneVLM experiment setup, ROS 2 integration scripts, and a model-agnostic VLM adapter; it does not claim affiliation with or endorsement by Cosys Lab, University of Antwerp, Microsoft, or Codex Laboratories.
+
+If Cosys-AirSim source is forked, modified, or distributed with this work, retain its complete upstream `LICENSE` and copyright notices. This repository intentionally contains installation scripts and configuration only: do not commit or redistribute the packaged Blocks/Unreal binaries, Unreal Engine assets, API credentials, or model weights unless their separate terms expressly permit redistribution. Each VLM, dataset, and external API used in an experiment remains subject to its own license and terms.
+
+Suggested academic attribution:
+
+> DroneVLM is built on Cosys-AirSim, an MIT-licensed fork and extension of Microsoft AirSim maintained by Cosys Lab, University of Antwerp. DroneVLM contributes a model-agnostic VLM adapter and ROS 2 semantic UAV-navigation experiment pipeline.
+
 ## Deploy
 
 Apply the Fern patch in the Fern checkout, build it, then deploy:
