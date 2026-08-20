@@ -11,7 +11,7 @@ Reproducible Fern deployment, noVNC workspace, and ROS 2 Humble mission setup fo
 - `scripts/setup-ros2-humble.sh` — builds the matching Cosys-AirSim ROS 2 bridge and interfaces.
 - `scripts/ros2-humble` — forces ROS 2 Humble to use Ubuntu 22.04's Python 3.10 (the RunPod image's default Python is 3.11).
 - `scripts/start-ros2.sh` — launches the bridge with API control and a bounded PD controller.
-- `scripts/ros2_waypoint_mission.py` — take off, execute a 1 m relative square, then land.
+- `scripts/ros2_waypoint_mission.py` — take off, execute a bounded 1 m out-and-back ROS 2 velocity mission, then land.
 
 No API key, SSH key, Pod address, or VNC password is stored here.
 
