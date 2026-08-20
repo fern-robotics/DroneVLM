@@ -1,15 +1,19 @@
 # DroneVLM: Cosys-AirSim on RunPod
+
 > DroneVLM is built on Cosys-AirSim, an MIT-licensed fork and extension of Microsoft AirSim maintained by Cosys Lab, University of Antwerp. DroneVLM contributes a model-agnostic VLM adapter and ROS 2 semantic UAV-navigation experiment pipeline.
 
 ## Deploy
 
-Apply the Fern patch in the Fern checkout, build it, then deploy:
+Deploy with the Fern release CLI that includes the built-in `cosys-airsim-vnc` profile:
 
 ```bash
-cd /path/to/fern
-git apply /path/to/DroneVLM/patches/fern-cosys-airsim-vnc.patch
-cargo build --release
-FERN_BIN="$PWD/target/release/fern" /path/to/DroneVLM/scripts/deploy-with-fern.sh
+fern deploy --profile cosys-airsim-vnc --yes
+```
+
+Or supply an explicit Fern binary path:
+
+```bash
+FERN_BIN=/path/to/fern /path/to/DroneVLM/scripts/deploy-with-fern.sh
 ```
 
 The profile exposes noVNC at:

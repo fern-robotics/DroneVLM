@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Requires Fern with the cosys-airsim-vnc profile from patches/fern-cosys-airsim-vnc.patch.
+# Requires a Fern release binary that includes the cosys-airsim-vnc profile.
 set -Eeuo pipefail
 
 FERN_BIN="${FERN_BIN:-fern}"
